@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="./css/style.grid.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Once Upon a Time...</title>
+	</head>
+	<body>
+		<nav class="nav-bar">
+			<a class="nav-logo-link" href="/">
+				<img class="nav-logo" src="./images/logo.png" alt="logo" />
+			</a>
+			<ul class="nav-ul">
+				<li class="about-us nav-li">
+					<a id="nav-link" class="nav-link" href="#about-us"
+						><h2>About us</h2></a
+				</li>
+				<li class="game-rules nav-li">
+					<a id="nav-link" class="nav-link" href="#game-rules"
+						><h2>Game Rules</h2></a
+					>
+				</li>
+				<li class="contact-us nav-li">
+					<a id="nav-link" class="nav-link" href="#contact-us">
+						<h2>Contact us</h2></a
+					>
+				</li>
+			</ul>
+		</nav>
+		<main>
+			<div class="main-container">
+				<div class="main-header">
+					<h2 class="main-header-1">Ready to enter the game?</h2>
+					<h2 class="main-header-2">Answer the call if you dare!</h2>
+					<h2 class="main-header-3">* Sound on - Low volume *</h2>
+				</div>
+				<img class="main-cover" src="./images/cover.png" />
+				<div id="audio-container" class="main-enter">
+					<h2 class="main-enter-label">Enter</h2>
+					<audio id="audio" class="audio" src="./sounds/ring.mp3"></audio>
+					<button id="play" class="action-btn action-btn-big">
+						<i class="fas fa-play"></i>
+					</button>
+				</div>
+			</div>
+			<a class="nav-logo-link" href="/">
+				<i class="fas fa-arrow-circle-up"></i>
+			</a>
+			<div id="about-us" class="container">
+				<h1 class="about-us header">About us</h1>
+				<p class="paragraph">
+					We are crazy inventors, happy to offer the ultimate online escape
+					game!<br />We make every effort to provide the highest quality to our
+					wonderful guests!<br />
+					Awaiting your feedbacks!<br /><br />
+					<em>RIIING...</em>
+				</p>
+			</div>
+			<div class="game-rules-container">
+				<div id="game-rules" class="container">
+					<h1 class="games-rules header">Game Rules</h1>
+					<p class="paragraph">
+						Rules are really simple:<br />
+						Just keep the handset to your ear,<br />
+						listen carefully to the instructions<br />
+						given by the voice from beyound and...<br />
+						Have Fun!<br /><br />
+						<em>RING... RIING...</em>
+					</p>
+				</div>
+			</div>
+			<div id="contact-us" class="container">
+				<h1 class="contact-us header">Contact us</h1>
+				<form action="https://www.freecodecamp.org/email-submit" class="form">
+					<label class="email-label" for="email">Email: </label>
+					<input
+						type="email"
+						class="email-input"
+						name="email"
+						value=""
+						placeholder="j.doe@gmail.com"
+						autocomplete="previous-email"
+					/>
+					<input type="submit" value="Send" class="submit" />
+				</form>
+				<p class="paragraph">
+					<em class="form-em">RING... RIING... RIIING...</em>
+				</p>
+				<div class="site-author">
+					<p class="paragraph-2">
+						<a class="icon-link" href="https://github.com/Catevika"
+							><img
+								class="icon"
+								width="37"
+								src="./icons/github.svg"
+								alt="twitter icon"
+						/></a>
+						Site made by <span>Dominique Bello</span> aka
+						<span>Catevika</span>
+						<a class="icon-link" href="https://twitter.com/dominique_bello"
+							><img
+								class="icon"
+								width="35"
+								src="./icons/twitter.svg"
+								alt="twitter icon"
+						/></a>
+					</p>
+				</div>
+				<div class="icon-authors">
+					<p class="paragraph-2">
+						Icons respectively made by
+						<a
+							class="footer-link"
+							href="https://www.flaticon.com/authors/pixel-perfect"
+							title="Pixel perfect"
+							>Pixel perfect</a
+						>
+						and
+						<a
+							class="footer-link"
+							href="https://www.flaticon.com/authors/freepik"
+							title="Freepik"
+							>Freepik</a
+						>
+						from
+						<a
+							class="footer-link"
+							href="https://www.flaticon.com/"
+							title="Flaticon"
+							>www.flaticon.com</a
+						>
+					</p>
+				</div>
+			</div>
+		</main>
+		<script
+			src="https://kit.fontawesome.com/230a15b518.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="./index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+// GAME RULES BaCKGROUND
+
+@mixin background-opacity {
+	-webkit-filter: opacity(50%);
+	filter: opacity(50%);
+}
+
+// EMAIL PLACEHOLDER
+
+@mixin email-placeholder {
+	&::-webkit-input-placeholder {
+		font-family: 'Special Elite', cursive;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: $secondary-color;
+
+		@media only screen and (max-width: 50em) {
+			font-size: 5vw;
+		}
+	}
+	&::-moz-placeholder {
+		font-family: 'Special Elite', cursive;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: $secondary-color;
+
+		@media only screen and (max-width: 50em) {
+			font-size: 5vw;
+		}
+	}
+	&:-ms-input-placeholder {
+		font-family: 'Special Elite', cursive;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: $secondary-color;
+
+		@media only screen and (max-width: 50em) {
+			font-size: 5vw;
+		}
+	}
+	&::-ms-input-placeholder {
+		font-family: 'Special Elite', cursive;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: $secondary-color;
+
+		@media only screen and (max-width: 50em) {
+			font-size: 5vw;
+		}
+	}
+	&::placeholder {
+		font-family: 'Special Elite', cursive;
+		font-size: 2.5vw;
+		font-weight: 100;
+		color: $secondary-color;
+
+		@media only screen and (max-width: 50em) {
+			font-size: 5vw;
+		}
+	}
+}
