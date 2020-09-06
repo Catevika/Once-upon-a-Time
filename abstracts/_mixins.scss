@@ -14,7 +14,7 @@
 		font-weight: 100;
 		color: $secondary-color;
 
-		@media only screen and (max-width: 50em) {
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
 		}
 	}
@@ -24,7 +24,7 @@
 		font-weight: 100;
 		color: $secondary-color;
 
-		@media only screen and (max-width: 50em) {
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
 		}
 	}
@@ -34,7 +34,7 @@
 		font-weight: 100;
 		color: $secondary-color;
 
-		@media only screen and (max-width: 50em) {
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
 		}
 	}
@@ -44,7 +44,7 @@
 		font-weight: 100;
 		color: $secondary-color;
 
-		@media only screen and (max-width: 50em) {
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
 		}
 	}
@@ -54,7 +54,7 @@
 		font-weight: 100;
 		color: $secondary-color;
 
-		@media only screen and (max-width: 50em) {
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
 		}
 	}
