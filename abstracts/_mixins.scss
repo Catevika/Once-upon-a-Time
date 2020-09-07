@@ -1,8 +1,8 @@
 // GAME RULES BaCKGROUND
 
 @mixin background-opacity {
-	-webkit-filter: opacity(50%);
-	filter: opacity(50%);
+	-webkit-filter: opacity(15%);
+	filter: opacity(15%);
 }
 
 // EMAIL PLACEHOLDER
@@ -13,6 +13,7 @@
 		font-size: 2.5vw;
 		font-weight: 100;
 		color: $secondary-color;
+		padding: 1.2vw 2vw 0.3vw;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
@@ -23,6 +24,7 @@
 		font-size: 2.5vw;
 		font-weight: 100;
 		color: $secondary-color;
+		padding: 1.2vw 2vw 0.3vw;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
@@ -33,6 +35,7 @@
 		font-size: 2.5vw;
 		font-weight: 100;
 		color: $secondary-color;
+		padding: 1.2vw 2vw 0.3vw;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
@@ -43,6 +46,7 @@
 		font-size: 2.5vw;
 		font-weight: 100;
 		color: $secondary-color;
+		padding: 1.2vw 2vw 0.3vw;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: 5vw;
@@ -52,6 +56,7 @@
 		font-family: 'Special Elite', cursive;
 		font-size: 2.5vw;
 		font-weight: 100;
+		padding: 1.2vw 2vw 0.3vw;
 		color: $secondary-color;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {

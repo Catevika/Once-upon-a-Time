@@ -1,48 +1,50 @@
-// AUDIO MANAGEMENT - ENTER BUTTON CLICK
+// ICON + AUDIO MANAGEMENT - ENTER BUTTON CLICK
 const audioContainer = document.getElementById('audio-container');
-const playBtn = document.getElementById('play');
 const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play');
+const playPause = document.getElementById('play-pause');
 
-// Phone rings
+// SOUND MANAGEMENT
+
 const sound = ['ring', 'ring', 'ring'];
-
-// Keep track of sound
 let soundIndex = 1;
 
-// Initially load sound into DOM
-loadSound(sound[soundIndex]);
-
-// Update song details
 function loadSound(sound)
 {
   audio.src = `./sounds/${sound}.mp3`;
 }
 
-// Play sound
+loadSound(sound[soundIndex]);
+
 function playSound()
 {
-  audioContainer.classList.add('play');
-  playBtn.querySelector('i.fas').classList.remove('fa-play');
-  playBtn.querySelector('i.fas').classList.add('fa-pause');
+  const pauseIsHidden = playPause.querySelector('img.icon-btn-pause').hasAttribute('hidden');
 
+  if (pauseIsHidden) {
+    playPause.querySelector('img.icon-btn-pause').removeAttribute('hidden');
+    playPause.querySelector('img.icon-btn-arrow').setAttribute('hidden', "");
+  }
+  audioContainer.classList.add('play');
   audio.play();
 }
 
-// Pause sound
 function pauseSound()
 {
-  audioContainer.classList.remove('play');
-  playBtn.querySelector('i.fas').classList.add('fa-play');
-  playBtn.querySelector('i.fas').classList.remove('fa-pause');
+  const arrowIsHidden = playPause.querySelector('img.icon-btn-arrow').hasAttribute('hidden');
 
+  if (arrowIsHidden) {
+    playPause.querySelector('img.icon-btn-arrow').removeAttribute('hidden');
+    playPause.querySelector('img.icon-btn-pause').setAttribute('hidden', "");
+  }
+
+  audioContainer.classList.remove('play');
   audio.pause();
 }
 
-// Next sound
+// Next image
 function nextSound()
 {
   soundIndex++;
-
   if (soundIndex > sound.length - 1) {
     soundIndex = 0;
   }
@@ -50,17 +52,17 @@ function nextSound()
   playSound();
 }
 
-// Event listeners
 playBtn.addEventListener('click', () =>
 {
   const isPlaying = audioContainer.classList.contains('play');
 
   if (isPlaying) {
+    playBtn.innerHTML = 'Enter';
     pauseSound();
   } else {
+    playBtn.innerHTML = 'Exit';
     playSound();
   }
 });
 
-// Sound ends
 audio.addEventListener('ended', nextSound);
