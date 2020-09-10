@@ -1,0 +1,56 @@
+.nav-bar {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: minmax(50%, auto);
+	grid-auto-flow: row;
+	align-items: center;
+	background-color: $background-color;
+
+	.nav-logo-link {
+		grid-column: 1/2;
+		display: inline;
+		line-height: $min-line-height;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			margin: 0 auto;
+		}
+
+		.nav-logo {
+			width: 33vw;
+			padding: 1vw 0 0vw 1vw;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				width: 70vw;
+			}
+		}
+	}
+
+	.nav-ul {
+		grid-column: 2/2;
+		display: flex;
+		justify-content: space-around;
+
+		.nav-li {
+			list-style-type: none;
+			padding-right: 2vw;
+
+			.nav-link {
+				text-decoration: none;
+				color: $link-color;
+
+				&:hover,
+				&:active {
+					color: $link-color-active;
+				}
+			}
+		}
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			grid-column: 1/-1;
+		}
+	}
+}

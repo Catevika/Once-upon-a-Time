@@ -1,0 +1,71 @@
+// GAME RULES BaCKGROUND
+
+@mixin background-opacity-main-container {
+	-webkit-filter: opacity(80%);
+	filter: opacity(80%);
+}
+
+@mixin background-opacity {
+	-webkit-filter: opacity(15%);
+	filter: opacity(15%);
+}
+
+// EMAIL PLACEHOLDER
+
+@mixin email-placeholder {
+	&::-webkit-input-placeholder {
+		font-family: 'secret_typewriterregular', cursive;
+		font-size: $default-font;
+		font-weight: 100;
+		padding: 1.2vw 0 2vw;
+		color: rgba($font-default-color, 0.7);
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+		}
+	}
+	&::-moz-placeholder {
+		font-family: 'secret_typewriterregular', cursive;
+		font-size: $default-font;
+		font-weight: 100;
+		padding: 1.2vw 0 2vw;
+		color: rgba($font-default-color, 0.7);
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+		}
+	}
+	&:-ms-input-placeholder {
+		font-family: 'secret_typewriterregular', cursive;
+		font-size: $default-font;
+		font-weight: 100;
+		padding: 1.2vw 0 2vw;
+		color: rgba($font-default-color, 0.7);
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+		}
+	}
+	&::-ms-input-placeholder {
+		font-family: 'secret_typewriterregular', cursive;
+		font-size: $default-font;
+		font-weight: 100;
+		padding: 1.2vw 0 2vw;
+		color: rgba($font-default-color, 0.7);
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+		}
+	}
+	&::placeholder {
+		font-family: 'secret_typewriterregular', cursive;
+		font-size: $default-font;
+		font-weight: 100;
+		padding: 1.2vw 0 2vw;
+		color: rgba($font-default-color, 0.7);
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+		}
+	}
+}

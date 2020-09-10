@@ -1,0 +1,31 @@
+// ml stands for 'mobile landscape'
+// mp stands for 'mobile portrait'
+$font-family: 'secret_typewriterregular', cursive;
+
+// Font-size variables
+$default-font: 3vw;
+$default-font-mp: 5vw;
+
+$title-font: 4vw;
+$title-font-mp: 5vw;
+
+$note-font: 1.5vw;
+$note-font-ml: 2.5vw;
+$note-font-mp: 3.5vw;
+
+// Line-height variables
+$min-line-height: 3vw;
+$min-line-height-mp: 2vw;
+
+$default-line-height: 5vw;
+$default-line-height-mp: 7vw;
+
+$note-line-height: 2.5vw;
+$note-line-height-mp: 4vw;
+
+//Text colors
+$link-color: #d3aa00;
+$link-color-active: #f7e926;
+$background-color: #292d3e;
+$font-default-color: #fefdf7;
+$accentuation-color: #615042;

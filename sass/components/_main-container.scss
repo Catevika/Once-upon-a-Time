@@ -1,0 +1,356 @@
+.main-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	height: 87vh;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		justify-content: flex-start;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url(../images/cover.png) no-repeat;
+		background-size: 76vw;
+		background-position-x: center;
+		z-index: 90;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			background-size: 100vw;
+		}
+	}
+
+	.main-header {
+		background-color: rgba($background-color, 0.8);
+		padding: 0.5vw 1vw;
+		margin: 16vw 0 4vw 14vw;
+		border-radius: 1vw;
+		z-index: 95;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			margin-top: 8vw;
+		}
+
+		.main-header-1 {
+			line-height: $min-line-height;
+		}
+
+		.main-header-2 {
+			font-size: $title-font;
+			padding-left: 3vw;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				font-size: $title-font-mp;
+			}
+		}
+		.main-header-3 {
+			line-height: $note-line-height;
+			font-style: italic;
+			font-size: $note-font;
+			text-align: right;
+			margin: 0;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				line-height: $note-line-height-mp;
+				font-size: $note-font-mp;
+			}
+
+			@media only screen and (max-width: 50em) and (orientation: landscape) {
+				font-size: $note-font-ml;
+			}
+		}
+	}
+
+	.enter-container {
+		display: flex;
+		line-height: 0;
+		margin-left: 18vw;
+		padding: 1vw 2vw;
+		border-radius: 0.5vw;
+		background-color: $link-color;
+		z-index: 95;
+
+		.action-btn {
+			background-color: transparent;
+			font-family: $font-family;
+			font-weight: bold;
+			font-size: $default-font;
+			margin-bottom: 0.25vw;
+			color: $background-color;
+			border: 0;
+			cursor: pointer;
+
+			&:focus {
+				outline: 0;
+			}
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				font-size: $default-font-mp;
+			}
+		}
+
+		.icon-btn {
+			width: 3.5vw;
+			margin-left: 1vw;
+			cursor: pointer;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				width: 5.8vw;
+			}
+		}
+	}
+}
+
+.about-us-container {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 8vw;
+		left: 8vw;
+		width: 50%;
+		height: 26%;
+		background: url(../images/handset.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 90;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			top: 13vw;
+		}
+	}
+
+	.about-us-paragraph {
+		width: 75%;
+		margin-left: 20%;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+
+.game-rules-container {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: url(../images/background-gamerules.png);
+		background-size: cover;
+		background-position-x: center;
+		z-index: 90;
+
+		@include background-opacity;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 82vw;
+	height: 100vh;
+	margin: 0 auto;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		width: 93vw;
+	}
+}
+
+.header {
+	margin: 4vw 0 4vw;
+	font-weight: 400;
+	color: $link-color;
+	border-bottom: $link-color 1px solid;
+	z-index: 95;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		margin: 20vw 0 5vw 0;
+	}
+}
+
+.up-arrow {
+	position: fixed;
+	top: 6.5vw;
+	right: 3vw;
+	width: 5vw;
+	z-index: 99;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		top: 23.5vw;
+		right: 2vw;
+		width: 7vw;
+	}
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 7vw;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		flex-direction: column;
+	}
+
+	.email-label {
+		margin-right: 2vw;
+
+		@media only screen and (max-width: 30em) and (orientation: portrait) {
+			margin-right: 0vw;
+
+			&[value] {
+				margin: 0 auto;
+			}
+		}
+
+		.email-input {
+			width: 50vw;
+			padding: 0.5vw 1vw;
+			border: none;
+			border-radius: 0.5vw;
+			background-color: rgba(232, 240, 254, 0.2);
+
+			@include email-placeholder;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				width: 60vw;
+				margin: 1vw 0 2vw;
+			}
+
+			&[value] {
+				font-family: $font-family;
+				font-size: $default-font;
+
+				@media only screen and (max-width: 50em) and (orientation: portrait) {
+					font-size: $default-font-mp;
+					padding: 1vw;
+				}
+			}
+		}
+	}
+
+	.email-submit {
+		background-color: $link-color;
+		font-family: $font-family;
+		font-size: $default-font;
+		font-weight: bold;
+		border: none;
+		border-radius: 0.5vw;
+		color: $background-color;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $default-font-mp;
+			margin: 3vw 0 0;
+		}
+
+		&[value] {
+			padding: 0.5vw 1vw;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				padding: 1vw 1.5vw;
+			}
+		}
+	}
+}
+
+em,
+.paragraph {
+	text-align: center;
+	font-size: $default-font;
+	z-index: 95;
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		font-size: $default-font-mp;
+	}
+
+	&-2 {
+		font-size: $note-font;
+		font-style: italic;
+		font-weight: normal;
+		line-height: $min-line-height;
+		color: rgba($font-default-color, 0.8);
+		text-align: center;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $note-font-ml;
+			line-height: $default-line-height-mp;
+			text-align: center;
+		}
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			font-size: $note-font-mp;
+			line-height: $default-line-height-mp;
+		}
+	}
+}
+
+.site-author {
+	line-height: $min-line-height;
+	margin: 6vw 0 1vw;
+
+	@media only screen and (max-width: 50em) {
+		line-height: $min-line-height-mp;
+		text-align: center;
+		margin: 5vw 0 2vw;
+	}
+
+	span {
+		color: $link-color;
+	}
+}
+
+.site-link {
+	line-height: $min-line-height;
+	margin: -2vw 0;
+}
+
+.icon {
+	padding: 0 1vw;
+	margin: -0.5vw 0;
+
+	@media only screen and (max-width: 50em) and (orientation: landscape) {
+		width: 6vw;
+		padding: 1vw;
+		margin: 0;
+	}
+
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		width: 10vw;
+		padding: 1vw;
+	}
+}
+
+.icon-authors {
+	@media only screen and (max-width: 50em) and (orientation: portrait) {
+		font-size: $default-font-mp;
+		text-align: center;
+	}
+
+	span {
+		color: $link-color;
+	}
+}
+
+.footer-link {
+	text-decoration: none;
+	color: $link-color;
+
+	&:hover,
+	&:active {
+		color: $link-color-active;
+	}
+}
