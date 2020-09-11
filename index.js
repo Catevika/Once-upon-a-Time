@@ -8,9 +8,9 @@ const playPause = document.getElementById('play-pause');
 // SOUND MANAGEMENT
 const sounds = ['ring', 'ring', 'ring'];
 let soundIndex = 1;
-let sound = sounds[soundIndex];
+const sound = sounds[soundIndex];
 
-function loadSound(sound) {
+function loadSound() {
 	audio.src = `./sounds/${sound}.mp3`;
 }
 

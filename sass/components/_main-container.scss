@@ -85,6 +85,17 @@
 		background-color: $link-color;
 		z-index: 95;
 
+		&:hover,
+		:active {
+			background-color: $link-color-active;
+			transform: scaleX(1.05) scaleY(1.1);
+			transition: all 0.2s;
+		}
+
+		&:after {
+			background-color: $link-color;
+		}
+
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			margin: 3vw auto 0;
 		}
@@ -107,15 +118,15 @@
 				font-size: 7vw;
 			}
 		}
+	}
 
-		.icon-btn {
-			width: 3.5vw;
-			margin-left: 1vw;
-			cursor: pointer;
+	.icon-btn {
+		width: 3.5vw;
+		margin-left: 1vw;
+		cursor: pointer;
 
-			@media only screen and (max-width: 50em) and (orientation: portrait) {
-				width: 7.8vw;
-			}
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			width: 7.8vw;
 		}
 	}
 }
@@ -220,6 +231,12 @@
 	width: 5vw;
 	z-index: 999;
 
+	&:hover,
+	:active {
+		transform: scaleX(1.05) scaleY(1.1);
+		transition: all 0.2s;
+	}
+
 	@media only screen and (max-width: 50em) and (orientation: landscape) {
 		top: 10vw;
 	}
@@ -284,6 +301,13 @@
 		border: none;
 		border-radius: 0.5vw;
 		color: $background-color;
+
+		&:hover,
+		&:active {
+			background-color: $link-color-active;
+			transform: scaleX(1.05) scaleY(1.1);
+			transition: all 0.2s;
+		}
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
@@ -385,5 +409,6 @@ em,
 	&:hover,
 	&:active {
 		color: $link-color-active;
+		transition: all 0.2s;
 	}
 }

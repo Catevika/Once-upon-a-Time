@@ -44,6 +44,7 @@
 				&:hover,
 				&:active {
 					color: $link-color-active;
+					transition: all 0.2s;
 				}
 			}
 		}
