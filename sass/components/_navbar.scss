@@ -1,6 +1,5 @@
 .nav-bar {
-	position: -webkit-sticky;
-	position: sticky;
+	@include sticky-position;
 	z-index: 100;
 	top: 0;
 	display: grid;
@@ -13,7 +12,7 @@
 	.nav-logo-link {
 		grid-column: 1/2;
 		display: inline;
-		// line-height: $min-line-height;
+		line-height: $min-line-height;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			margin: 3vw auto;

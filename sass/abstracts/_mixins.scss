@@ -1,4 +1,10 @@
-// GAME RULES BaCKGROUND
+// NAVBAR STICKY
+@mixin sticky-position {
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+// GAME RULES BACKGROUND
 
 @mixin background-opacity-main-container {
 	-webkit-filter: opacity(80%);
