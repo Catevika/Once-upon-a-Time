@@ -13,10 +13,10 @@
 	.nav-logo-link {
 		grid-column: 1/2;
 		display: inline;
-		line-height: $min-line-height;
+		// line-height: $min-line-height;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
-			margin: 0 auto;
+			margin: 3vw auto;
 		}
 
 		.nav-logo {
@@ -51,6 +51,7 @@
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			grid-column: 1/-1;
+			margin-bottom: 2vw;
 		}
 	}
 }

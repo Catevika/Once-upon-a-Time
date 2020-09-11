@@ -23,8 +23,8 @@
 		z-index: 90;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
-			background-size: 100vw;
-			background-position-y: center;
+			background-size: auto 100%;
+			background-position-x: center;
 		}
 	}
 
@@ -36,19 +36,25 @@
 		z-index: 95;
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
-			margin-top: 8vw;
+			margin: 8vw auto 0;
 		}
 
 		.main-header-1 {
-			line-height: $min-line-height;
+			// line-height: $min-line-height;
+
+			@media only screen and (max-width: 50em) and (orientation: portrait) {
+				// line-height: $default-line-height;
+				text-align: center;
+				padding: 0;
+			}
 		}
 
 		.main-header-2 {
-			font-size: $title-font;
 			padding-left: 3vw;
 
 			@media only screen and (max-width: 50em) and (orientation: portrait) {
-				font-size: $title-font-mp;
+				text-align: center;
+				padding: 0;
 			}
 		}
 		.main-header-3 {
@@ -61,6 +67,7 @@
 			@media only screen and (max-width: 50em) and (orientation: portrait) {
 				line-height: $note-line-height-mp;
 				font-size: $note-font-mp;
+				padding: 0;
 			}
 
 			@media only screen and (max-width: 50em) and (orientation: landscape) {
@@ -77,6 +84,10 @@
 		border-radius: 0.5vw;
 		background-color: $link-color;
 		z-index: 95;
+
+		@media only screen and (max-width: 50em) and (orientation: portrait) {
+			margin: 3vw auto 0;
+		}
 
 		.action-btn {
 			background-color: transparent;
@@ -115,7 +126,7 @@
 	&::before {
 		content: '';
 		position: absolute;
-		top: 8vw;
+		top: 9.7vw;
 		left: 8vw;
 		width: 50%;
 		height: 26%;
@@ -124,8 +135,15 @@
 		background-size: cover;
 		z-index: 90;
 
+		@media only screen and (max-width: 50em) and (orientation: landscape) {
+			top: 15vw;
+			width: 100%;
+			height: 26%;
+			background-position-y: center;
+		}
+
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
-			top: 18vw;
+			top: 45vw;
 			width: 100%;
 			height: 20%;
 			background-position-y: center;
@@ -170,32 +188,44 @@
 	height: 100vh;
 	margin: 0 auto;
 
+	@media only screen and (max-width: 50em) and (orientation: landscape) {
+		width: 87.5vw;
+	}
+
 	@media only screen and (max-width: 50em) and (orientation: portrait) {
 		width: 93vw;
 	}
 }
 
 .header {
-	margin: 4vw 0 4vw;
+	margin: 6vw 0 4vw;
 	font-weight: 400;
 	color: $link-color;
 	border-bottom: $link-color 1px solid;
-	z-index: 95;
+	z-index: 90;
+
+	@media only screen and (max-width: 50em) and (orientation: landscape) {
+		margin: 8vw 0 5vw 0;
+	}
 
 	@media only screen and (max-width: 50em) and (orientation: portrait) {
-		margin: 20vw 0 5vw 0;
+		margin: 31vw 0 5vw 0;
 	}
 }
 
 .up-arrow {
 	position: fixed;
-	top: 6.5vw;
+	top: 8.5vw;
 	right: 3vw;
 	width: 5vw;
-	z-index: 99;
+	z-index: 999;
+
+	@media only screen and (max-width: 50em) and (orientation: landscape) {
+		top: 10vw;
+	}
 
 	@media only screen and (max-width: 50em) and (orientation: portrait) {
-		top: 23.5vw;
+		top: 37vw;
 		right: 2vw;
 		width: 7vw;
 	}
@@ -291,15 +321,14 @@ em,
 		color: rgba($font-default-color, 0.8);
 		text-align: center;
 
-		@media only screen and (max-width: 50em) and (orientation: portrait) {
+		@media only screen and (max-width: 50em) and (orientation: landscape) {
 			font-size: $note-font-ml;
-			line-height: $default-line-height-mp;
 			text-align: center;
 		}
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $note-font-mp;
-			line-height: $default-line-height-mp;
+			line-height: $note-line-height-mp;
 		}
 	}
 }
