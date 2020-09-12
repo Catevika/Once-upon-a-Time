@@ -12,6 +12,25 @@ The phone is ringing... Will you dare to answer the call? Will you accept and so
 
 Let's start the adventure and Good Luck 🔥⚡🔥
 
+## Features
+
+Simple Single Application Landing Page
+
+Full responsiveness for the best comfort on mobile and desktop devices
+
+Implementation of
+
+- sticky navigation bar
+- action button that triggers a sound
+- 'scroll-to-top' button
+- very simple animations for more fluent interactions
+
+Use of
+
+- **Scss** mixins and file structure
+- **Responsive Design** Media Queries for lanscape and portrait modes
+- **Responsive Sizes** thanks to 'vw' units
+
 ## Tech used
 
 - **Languages** HTML5 - SCSS - Javascript
@@ -25,8 +44,6 @@ Let's start the adventure and Good Luck 🔥⚡🔥
 _Note: it is recommended to lower the volume of your device before starting if you are sensitive to loud ringtones_
 
 Just open **[Once upon a time...](https://catevika.github.io/Once-upon-a-Time/)** in your favorite browser!
-
-This project is fully responsive for the best comfort on mobile and desktop devices
 
 ## Contributing
 
@@ -52,6 +69,4 @@ Do not forget to ⭐ this project if you like it. Thank you!
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
-_Simple Single Application Landing Page curated with ❤️ by [Dominique Bello](https://twitter.com/dominique_bello) aka Catevika_
+[MIT](https://choosealicense.com/licenses/mit/) &copy; [Dominique Bello](https://twitter.com/dominique_bello) aka Catevika
