@@ -300,6 +300,7 @@
 		border: none;
 		border-radius: 0.5vw;
 		color: $background-color;
+		-webkit-appearance: none; // For Safari
 
 		&:hover,
 		&:active {
