@@ -9,6 +9,7 @@
 - [Tech used](#tech-used)
 - [How to use](#how-to-use)
 - [Contributing](#contributing)
+- [Credits](#credits)
 - [License](#license)
 
 ## About
@@ -86,6 +87,16 @@ Pull requests are welcome
 Do not hesitate to ask questions, send issues or report bugs if any
 
 Do not forget to ⭐ this project if you like it. Thank you!
+
+## Credits
+
+- **Secret Typewriter Font** from [Fontsquirrel](Fonthttps://www.fontsquirrel.com/fonts/Secret-Typewriter)
+
+- **Phone vector** created by **macrovector** from [Freepik.com](https://www.freepik.com/vectors/phone)
+
+- **Github icon** created by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect) from [Flaticon.com](https://www.flaticon.com/)
+
+- **Twitter icon** created by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon.com](https://www.flaticon.com/)
 
 ## License
 
