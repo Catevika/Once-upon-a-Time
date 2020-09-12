@@ -1,12 +1,21 @@
-## Once upon a time...
+## Once upon a time... <!-- omit in toc -->
 
 ![Once upon a time... screenshot](./images/screenshot.png)
+
+## Table of Content <!-- omit in toc -->
+
+- [About](#about)
+- [Features](#features)
+- [Tech used](#tech-used)
+- [How to use](#how-to-use)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## About
 
 Let's immerse yourself in a terrific online game!
 
-### Intrigue
+### Intrigue <!-- omit in toc -->
 
 The phone is ringing... Will you dare to answer the call? Will you accept and solve the challenges whispered by the voice from beyond without being scared to death?
 
@@ -55,13 +64,19 @@ Pull requests are welcome
    git clone https://github.com/Catevika/Once-upon-a-Time.git
    ```
 
-2. install [Sass](https://sass-lang.com/install) - my node installation with an npm package
+2. Change your working directory
+
+   ```
+   cd <your working directory>
+   ```
+
+3. install [Sass](https://sass-lang.com/install) - my node installation with an npm package
    ```
    npm install -g sass
    ```
-3. install a Sass compiler or use a Live Sass Compiler extension from your favorite code editor - my vscode [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension
-4. optional: use a Live Server extension from your favorite code editor to see your changes live - my vscode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
-5. make your changes and send your request with a simple description
+4. install a Sass compiler or use a Live Sass Compiler extension from your favorite code editor - my vscode [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension
+5. optional: use a Live Server extension from your favorite code editor to see your changes live - my vscode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+6. make your changes and send your request with a simple description
 
 Do not hesitate to ask questions, send issues or report bugs if any
 
