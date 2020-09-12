@@ -26,9 +26,13 @@ Let's start the adventure and Good Luck 🔥⚡🔥
 
 Simple Single Application Landing Page
 
-Full responsiveness for the best comfort on mobile and desktop devices
+- _First complete project from scratch as a self-taught Front End Developer!_
 
-Implementation of
+Fully responsive
+
+- _mobile and desktop devices friendly_
+
+Main implemented features
 
 - sticky navigation bar
 - action button that triggers a sound
@@ -37,7 +41,7 @@ Implementation of
 
 Use of
 
-- **Scss** mixins and file structure
+- **Scss** variables, mixins and file structure
 - **Responsive Design** Media Queries for lanscape and portrait modes
 - **Responsive Sizes** thanks to 'vw' units
 
@@ -82,7 +86,19 @@ Pull requests are welcome
 
    --> my VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
 
-6. make your changes and send your request with a simple description
+6. create your feature branch
+   ```
+   git checkout -b <your new feature name>
+   ```
+7. commit your changes
+   ```
+   git commit -am 'Add some new feature'
+   ```
+8. Push to the branch
+   ```
+   git push origin <your new feature name>
+   ```
+9. create a new Pull Request with a simple description
 
 Do not hesitate to ask questions, send issues or report bugs if any
 
@@ -90,7 +106,7 @@ Do not forget to ⭐ this project if you like it. Thank you!
 
 ## Credits
 
-- **Secret Typewriter Font** from [Fontsquirrel](Fonthttps://www.fontsquirrel.com/fonts/Secret-Typewriter)
+- **Secret Typewriter Font** from [Fontsquirrel](https://www.fontsquirrel.com/fonts/Secret-Typewriter)
 
 - **Phone vector** created by **macrovector** from [Freepik.com](https://www.freepik.com/vectors/phone)
 
