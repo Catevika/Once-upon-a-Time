@@ -25,9 +25,11 @@
 		font-weight: 100;
 		padding: 1.2vw 0 2vw;
 		color: rgba($font-default-color, 0.7);
+		-webkit-appearance: none; // For Safari
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
+			padding: 0;
 		}
 	}
 	&::-moz-placeholder {
@@ -36,9 +38,11 @@
 		font-weight: 100;
 		padding: 1.2vw 0 2vw;
 		color: rgba($font-default-color, 0.7);
+		-webkit-appearance: none; // For Safari
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
+			padding: 0;
 		}
 	}
 	&:-ms-input-placeholder {
@@ -47,9 +51,11 @@
 		font-weight: 100;
 		padding: 1.2vw 0 2vw;
 		color: rgba($font-default-color, 0.7);
+		-webkit-appearance: none; // For Safari
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
+			padding: 0;
 		}
 	}
 	&::-ms-input-placeholder {
@@ -58,9 +64,11 @@
 		font-weight: 100;
 		padding: 1.2vw 0 2vw;
 		color: rgba($font-default-color, 0.7);
+		-webkit-appearance: none; // For Safari
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
+			padding: 0;
 		}
 	}
 	&::placeholder {
@@ -69,9 +77,11 @@
 		font-weight: 100;
 		padding: 1.2vw 0 2vw;
 		color: rgba($font-default-color, 0.7);
+		-webkit-appearance: none; // For Safari
 
 		@media only screen and (max-width: 50em) and (orientation: portrait) {
 			font-size: $default-font-mp;
+			padding: 0;
 		}
 	}
 }

@@ -256,13 +256,14 @@
 	}
 
 	.email-label {
+		font-size: $default-font-mp;
 		margin-right: 2vw;
 
 		@media only screen and (max-width: 30em) and (orientation: portrait) {
 			margin-right: 0vw;
 
 			&[value] {
-				margin: 0 auto;
+				font-size: $default-font-mp;
 			}
 		}
 
@@ -276,7 +277,8 @@
 			@include email-placeholder;
 
 			@media only screen and (max-width: 50em) and (orientation: portrait) {
-				width: 60vw;
+				width: 58vw;
+				padding: 0;
 				margin: 1vw 0 2vw;
 			}
 
