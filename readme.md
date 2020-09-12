@@ -1,24 +1,18 @@
-# Once upon a time...
-
----
+## Once upon a time...
 
 ![Once upon a time... screenshot](./images/screenshot.png)
 
-# About
+## About
 
----
+Let's immerse yourself in a terrific online game!
 
-## Let's immerse yourself in a terrific online game!
+### Intrigue
 
-## Intrigue:
+The phone is ringing... Will you dare to answer the call? Will you accept and solve the challenges whispered by the voice from beyond without being scared to death?
 
-## The phone is ringing... Will you dare to answer the call? Will you accept and solve the challenges whispered by the voice from beyond without being scared to death?
-
-## Let's start the adventure and Good Luck 🔥⚡🔥
+Let's start the adventure and Good Luck 🔥⚡🔥
 
 ## Tech used
-
----
 
 - **Languages** HTML5 - SCSS - Javascript
 
@@ -28,17 +22,13 @@
 
 ## How to use
 
----
-
 _Note: it is recommended to lower the volume of your device before starting if you are sensitive to loud ringtones_
 
-Just open **[Once upon a time...](https://github.com/Catevika/Once-upon-a-Time)** in your favorite browser!
+Just open **[Once upon a time...](https://catevika.github.io/Once-upon-a-Time/)** in your favorite browser!
 
 This project is fully responsive for the best comfort on mobile and desktop devices
 
 ## Contributing
-
----
 
 Pull requests are welcome
 
@@ -58,11 +48,9 @@ Pull requests are welcome
 
 Do not hesitate to ask questions, send issues or report bugs if any
 
-Do not forget to star🌟this project if you like it. Thank you!
+Do not forget to ⭐ this project if you like it. Thank you!
 
 ## License
-
----
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
