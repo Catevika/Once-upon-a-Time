@@ -43,10 +43,9 @@ Use of
 ## Tech used
 
 - **Languages** HTML5 - SCSS - Javascript
-
-- **Code editor** VSCode
-
-- **Version control** Git
+- **Code editor** [VSCode](https://code.visualstudio.com/)
+- **Version control** [Git](https://git-scm.com/)
+- **Markdown** --> my VSCode [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) extension
 
 ## How to use
 
@@ -64,7 +63,7 @@ Pull requests are welcome
    git clone https://github.com/Catevika/Once-upon-a-Time.git
    ```
 
-2. Change your working directory
+2. change your working directory
 
    ```
    cd <your working directory>
@@ -74,8 +73,14 @@ Pull requests are welcome
    ```
    npm install -g sass
    ```
-4. install a Sass compiler or use a Live Sass Compiler extension from your favorite code editor - my vscode [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension
-5. optional: use a Live Server extension from your favorite code editor to see your changes live - my vscode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+4. install a Sass compiler or use a Live Sass Compiler extension from your favorite code editor
+
+   --> my VSCode [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) extension
+
+5. optional: use a Live Server extension from your favorite code editor to see your changes live
+
+   --> my VSCode [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension
+
 6. make your changes and send your request with a simple description
 
 Do not hesitate to ask questions, send issues or report bugs if any
